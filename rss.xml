@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://pqc.club/rss.xml" rel="self" type="application/rss+xml" />
+    <title>PQC Club</title>
+    <link>https://pqc.club</link>
+    <description>Post-Quantum Cryptography</description>
+    <language>en-us</language>
+   <item>
+      <title>Added "Tuta" Encrypted email, calendar and contacts</title>
+      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <link>https://pqc.club/#tuta</link>
+      <guid>https://pqc.club/#tuta</guid>
+      <description>Tuta has implemented a hybrid custom quantum safe protocol called TutaCrypt which combines a post-quantum Key Encapsulation Mechanism (CRYSTALS-Kyber) and an Elliptic-Curve-Diffie-Hellmann key exchange (x25519).
+
+<a href="https://tuta.com/blog/post-quantum-cryptography/">https://tuta.com/blog/post-quantum-cryptography/</a></description>
+    </item>
+   <item>
+      <title>Added "Signal" An open-source, encrypted messaging service</title>
+      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <link>https://pqc.club/#signal</link>
+      <guid>https://pqc.club/#signal</guid>
+      <description>Signal is a widely used secure messaging app known for creating the Signal protocol which has been upgraded to use their custom quantum secure PQXDH specification.
+
+<a href="https://signal.org/blog/pqxdh/">https://signal.org/blog/pqxdh/</a></description>
+    </item>
+   <item>
+      <title>Added "oqs-provider" OpenSSL 3 provider containing post-quantum algorithms</title>
+      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <link>https://pqc.club/#oqs-provider</link>
+      <guid>https://pqc.club/#oqs-provider</guid>
+      <description>Currently this provider fully enables quantum-safe cryptography for KEM key establishment in TLS1.3 including management of such keys via the OpenSSL (3.0) provider interface and hybrid KEM schemes.
+
+<a href="https://openquantumsafe.org/" target="blank">https://openquantumsafe.org/</a></description>
+    </item>
+   <item>
+      <title>Added "liboqs" C library for prototyping and experimenting with quantum-resistant cryptography</title>
+      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <link>https://pqc.club/#liboqs</link>
+      <guid>https://pqc.club/#liboqs</guid>
+      <description>liboqs is part of the Open Quantum Safe (OQS) project, which aims to develop and integrate into applications quantum-safe cryptography to facilitate deployment and testing in real world contexts.
+
+The OQS project is supported by the <a href="https://pqca.org/" target="blank">Post-Quantum Cryptography Alliance</a> as part of the <a href="https://www.linuxfoundation.org/" target="blank">Linux Foundation</a>. More information about the Open Quantum Safe project can be found at <a href="https://openquantumsafe.org/" target="blank">https://openquantumsafe.org/</a>.</description>
+    </item>
+  </channel>
+</rss>
