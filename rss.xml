@@ -7,6 +7,13 @@
     <description>Post-Quantum Cryptography</description>
     <language>en-us</language>
    <item>
+      <title>Added iMessage, Mullvad, Chromium, Firefox, OQS-OpenSSH, SCOSSL, BoringSSL, Cloudflare, AWSKMS and more</title>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      <link>https://pqc.club/#</link>
+      <guid>https://pqc.club/#</guid>
+      <description>Added multiple new services and information sections. Visit pqc.club to see all the new updates!</description>
+    </item>
+   <item>
       <title>Added "Tuta" Encrypted email, calendar and contacts</title>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
       <link>https://pqc.club/#tuta</link>

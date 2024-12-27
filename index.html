@@ -29,10 +29,21 @@ Visit our sister site: <a target="blank" href="https://cli.club">https://cli.clu
 <div class="cat-item"><a href="#email" class="cat">Email</a></div>
 <div class="cat-item"><a href="#im" class="cat">Messaging</a></div>
 </div>
+<h2 class="cat-title">Tools</h2>
+<div class="cat-container">
+<div class="cat-item"><a href="#vpn" class="cat">VPN</a></div>
+<div class="cat-item"><a href="#browsers" class="cat">Browsers</a></div>
+<div class="cat-item"><a href="#ssh" class="cat">SSH</a></div>
+</div>
 <h2 class="cat-title">Development</h2>
 <div class="cat-container">
 <div class="cat-item"><a href="#openssl" class="cat">OpenSSL</a></div>
 <div class="cat-item"><a href="#libraries" class="cat">Libraries</a></div>
+</div>
+<h2 class="cat-title">Resources</h2>
+<div class="cat-container">
+<div class="cat-item"><a href="#services" class="cat">Services</a></div>
+<div class="cat-item"><a href="#info" class="cat">Information</a></div>
 </div>
 <br><br>
 <h2 id="email">Email</h2>
@@ -53,6 +64,60 @@ Signal is a widely used secure messaging app known for creating the Signal proto
 <a href="https://signal.org/blog/pqxdh/" target="blank">https://signal.org/blog/pqxdh/</a>
 </pre>
 </div>
+<div class="container">
+<h2><a id="imessage" href="https://en.wikipedia.org/wiki/IMessage" target="blank">iMessage: Apple's Instant Messenger</a></h2>
+<pre>
+Apple's iMessage now supports PQC3, based on Kyber (ML-KEM) and ECC.
+
+<a href="https://security.apple.com/blog/imessage-pq3/" target="blank">https://security.apple.com/blog/imessage-pq3/</a>
+</pre>
+</div>
+<h2 id="vpn">VPN</h2>
+<div class="container">
+<h2><a id="mullvad" href="https://mullvad.net" target="blank">Mullvad: Secure and private vpn</a></h2>
+<pre>
+Mullvad is a trusted secure and private VPN provider which supports PQC algorithms for encrypting your VPN traffic.
+
+<a href="https://mullvad.net/en/blog/post-quantum-safe-vpn-tunnels-available-on-all-wireguard-servers" target="blank">https://mullvad.net/en/blog/post-quantum-safe-vpn-tunnels-available-on-all-wireguard-servers</a>
+</pre>
+</div>
+<h2 id="browsers">Browsers</h2>
+<div class="container">
+<h2><a id="chromium" href="https://www.chromium.org/Home/" target="blank">Chromium: An open-source browser project </a></h2>
+<pre>
+Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all Internet users to experience the web.
+
+Enable Kyber here:
+chrome://flags/#enable-tls13-kyber
+
+<a href="https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html" target="blank">https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html</a>
+
+<a href="https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html" target="blank">https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html</a>
+
+<a href="https://blog.chromium.org/2024/05/advancing-our-amazing-bet-on-asymmetric.html" target="blank">https://blog.chromium.org/2024/05/advancing-our-amazing-bet-on-asymmetric.html</a>
+</pre>
+</div>
+<div class="container">
+<h2><a id="firefox" href="https://www.mozilla.org/en-US/firefox/" target="blank">Firefox: Privacy first browser</a></h2>
+<pre>
+Mozilla Firefox now supports Post-Quantum Cryptography.
+
+In about:config enable the following:
+security.tls.enable_kyber
+network.http.http3.enable_kyber
+
+<a href="https://qubip.eu/transition-of-nss-and-firefox-to-support-the-quantum-secure-internet-browsing/" target="blank">https://qubip.eu/transition-of-nss-and-firefox-to-support-the-quantum-secure-internet-browsing/</a>
+</pre>
+</div>
+<h2 id="ssh">SSH</h2>
+<div class="container">
+<h2><a id="openssh" href="https://github.com/open-quantum-safe/openssh" target="blank">OQS-OpenSSH: A PQC fork of OpenSSH</a></h2>
+<pre>
+OQS-OpenSSH is a fork of OpenSSH that adds quantum-safe key exchange and signature algorithms using liboqs for prototyping and evaluation purposes. This fork is not endorsed by the OpenSSH project.
+
+<a href="https://openquantumsafe.org/applications/ssh.html" target="blank">https://openquantumsafe.org/applications/ssh.html</a>
+</pre>
+</div>
 <h2 id="openssl">OpenSSL</h2>
 <div class="container">
 <h2><a id="oqs-provider" href="https://github.com/open-quantum-safe/oqs-provider" target="blank">oqs-provider: OpenSSL 3 provider containing post-quantum algorithms</a></h2>
@@ -60,6 +125,26 @@ Signal is a widely used secure messaging app known for creating the Signal proto
 Currently this provider fully enables quantum-safe cryptography for KEM key establishment in TLS1.3 including management of such keys via the OpenSSL (3.0) provider interface and hybrid KEM schemes.
 
 <a href="https://openquantumsafe.org/" target="blank">https://openquantumsafe.org/</a>
+</pre>
+</div>
+<div class="container">
+<h2><a id="symcrypt" href="https://github.com/microsoft/SymCrypt-OpenSSL" target="blank">SCOSSL: The SymCrypt engine for OpenSSL</a></h2>
+<pre>
+The SymCrypt engine for OpenSSL (SCOSSL) allows the use of OpenSSL with SymCrypt as the provider for core cryptographic operations.
+
+***December 2024 Update: We’re excited to announce the addition of Leighton-Micali Signature Scheme (LMS) and ML-DSA (FIPS 204, formerly Dilithium) into SymCrypt with the December 2024 update.
+
+<a href="https://techcommunity.microsoft.com/blog/microsoftsecurityandcompliance/microsofts-quantum-resistant-cryptography-is-here/4238780" target="blank">https://techcommunity.microsoft.com/blog/microsoftsecurityandcompliance/microsofts-quantum-resistant-cryptography-is-here/4238780</a>
+</pre>
+</div>
+<div class="container">
+<h2><a id="boringssl" href="https://boringssl.googlesource.com/boringssl/" target="blank">BoringSSL: A fork of OpenSSL that is designed to meet Google's needs</a></h2>
+<pre>
+Upstream BoringSSL now supports X25519Kyber768Draft00 under the new codepoint 0x6399.
+
+Although BoringSSL is an open source project, it is not intended for general use, as OpenSSL is. We don't recommend that third parties depend upon it. Doing so is likely to be frustrating because there are no guarantees of API or ABI stability.
+
+<a href="https://boringssl.googlesource.com/boringssl/" target="blank">https://boringssl.googlesource.com/boringssl/</a>
 </pre>
 </div>
 <h2 id="libraries">Libraries</h2>
@@ -71,6 +156,74 @@ liboqs is part of the Open Quantum Safe (OQS) project, which aims to develop and
 The OQS project is supported by the <a href="https://pqca.org/" target="blank">Post-Quantum Cryptography Alliance</a> as part of the <a href="https://www.linuxfoundation.org/" target="blank">Linux Foundation</a>. More information about the Open Quantum Safe project can be found at <a href="https://openquantumsafe.org/" target="blank">https://openquantumsafe.org/</a>.
 </pre>
 </div>
+<h2 id="services">Services</h2>
+<div class="container">
+<h2><a id="cloudflare" href="https://www.cloudflare.com/" target="blank">Cloudflare: CDN, Cybersecurity, DNS, Registrar, WAN, Proxy</a></h2>
+<pre>
+Since September 2023, Cloudflare has supported post-quantum key agreement algorithms for establishing connections to origin servers (client websites), and is gradually rolling out support for post-quantum cryptography for client connections.
+
+Cloudflare now supports X25519MLKEM768 which is a popular hybrid key agreement using ECC and now standardized ML-KEM.
+
+On essentially all domains served through Cloudflare they have now enabled hybrid post-quantum key agreement.
+
+Cloudflare is also a leading company in PQC research.
+
+<a href="https://pq.cloudflareresearch.com/" target="blank">https://pq.cloudflareresearch.com/</a>
+
+<a href="https://blog.cloudflare.com/pq-2024/" target="blank">https://blog.cloudflare.com/pq-2024/</a>
+
+<a href="https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-support/" target="blank">https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-support/</a>
+</pre>
+</div>
+<div class="container">
+<h2><a id="awskms" href="https://aws.amazon.com/kms/" target="blank">AWS KMS: Key Management Service</a></h2>
+<pre>
+Create and control keys used to encrypt or digitally sign your data.
+
+AWS Key Management Service (AWS KMS) supports a hybrid post-quantum key exchange option for the Transport Layer Security (TLS) network encryption protocol.
+
+(ECDH + Kyber)
+
+<a href="https://docs.aws.amazon.com/kms/latest/developerguide/pqtls.html" target="blank">https://docs.aws.amazon.com/kms/latest/developerguide/pqtls.html</a>
+</pre>
+</div>
+<h2 id="info">Information</h2>
+<div class="container">
+<h2><a id="qubip" href="https://qubip.eu/" target="blank">QUBIP: Leading the transition to PQC</a></h2>
+<pre>
+QUBIP project leads the integration of Post-Quantum algorithms into protocols, networks and systems we use today.
+
+<a href="https://qubip.eu/" target="blank">https://qubip.eu/</a>
+</pre>
+</div>
+<div class="container">
+<h2><a id="tldr" href="https://tldr.fail/" target="blank">tldr.fail: PQC Client-Hello bug</a></h2>
+<pre>
+The migration to post-quantum cryptography is being held back by buggy servers that do not correctly implement TLS. Due to a bug, these servers reject connections that use post-quantum-secure cryptography, instead of negotiating classical cryptography if they do not support post-quantum cryptography.
+
+<a href="https://tldr.fail/" target="blank">https://tldr.fail/</a>
+</pre>
+</div>
+<div class="container">
+<h2>Other Resources</h2>
+<pre>
+Blog Posts:
+<a href="https://www.kaspersky.com.au/blog/postquantum-cryptography-2024-implementation-issues/34061/" target="blank">https://www.kaspersky.com.au/blog/postquantum-cryptography-2024-implementation-issues/34061/</a>
+<a href="https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html" target="blank">https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html</a>
+<a href="https://security.googleblog.com/2024/08/post-quantum-cryptography-standards.html" target="blank">https://security.googleblog.com/2024/08/post-quantum-cryptography-standards.html</a>
+<a href="https://bughunters.google.com/blog/5108747984306176/google-s-threat-model-for-post-quantum-cryptography" target="blank">https://bughunters.google.com/blog/5108747984306176/google-s-threat-model-for-post-quantum-cryptography</a>
+
+Websites:
+<a href="https://openquantumsafe.org/" target="blank">https://openquantumsafe.org/</a>
+<a href="https://pq.cloudflareresearch.com/" target="blank">https://pq.cloudflareresearch.com</a>
+<a href="https://csrc.nist.gov/pqc-standardization" target="blank">https://csrc.nist.gov/pqc-standardization</a>
+<a href="https://github.com/Fraunhofer-AISEC/pqdb" target="blank">https://github.com/Fraunhofer-AISEC/pqdb</a>
+
+Other PQC Lists:
+<a href="https://openquantumsafe.org/applications/external.html" target="blank">https://openquantumsafe.org/applications/external.html</a>
+<a href="https://github.com/open-quantum-safe/oqs-demos" target="blank">https://github.com/open-quantum-safe/oqs-demos</a>
+</pre>
+</div>
 <br>
 <center>
 <a href="#">Top</a>
@@ -79,8 +232,20 @@ The OQS project is supported by the <a href="https://pqca.org/" target="blank">P
 For recommendations please submit an issue on <a target="blank" href="https://github.com/pqc-club/pqc-club.github.io">github</a>.
 <br>
 <br>
+Email: <a target="blank" href="mailto:contact@pqc.club">contact@pqc.club</a>
+<br>
+<br>
 <br>
 </center>
 </main>
 </body>
 </html>
+<!--
+<div class="container">
+<h2><a id="" href="" target="blank"></a></h2>
+<pre>
+
+<a href="" target="blank"></a>
+</pre>
+</div>
+-->
